@@ -1,0 +1,78 @@
+  body {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #000000 100%);
+            min-height: 100vh;
+        }
+        
+        .cert-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+            border: 1px solid #333;
+        }
+        
+        .cert-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+            border-color: #dc2626;
+        }
+        
+        .cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(220, 38, 38, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 12px;
+        }
+        
+        .cert-card:hover::before {
+            opacity: 1;
+        }
+        
+        .nav-title {
+            background: linear-gradient(90deg, #dc2626, #ef4444, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 5px rgba(220, 38, 38, 0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(220, 38, 38, 0.8)); }
+        }
+        
+        .back-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: linear-gradient(45deg, #dc2626, #ef4444);
+            transform: translateX(-5px);
+        }
+        
+        .cert-image {
+            transition: all 0.3s ease;
+            filter: grayscale(30%) brightness(0.9);
+        }
+        
+        .cert-card:hover .cert-image {
+            filter: grayscale(0%) brightness(1.1);
+        }
+        
+        .cert-title {
+            background: linear-gradient(90deg, #ffffff, #f3f4f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .decorative-line {
+            background: linear-gradient(90deg, transparent, #dc2626, transparent);
+            height: 2px;
+            width: 100%;
+            margin: 20px 0;
+        }

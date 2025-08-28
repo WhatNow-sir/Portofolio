@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahansa - Official website - Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">Mahansa Putra Wibisono</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ 
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-circle"></div>
+            <div class="floating-circle"></div>
+            <div class="floating-circle"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-profile">
+                    <div class="profile-image">
+                        <img src="Assets/Person.jfif" alt="Profile Picture" id="profileImg">
+                    </div>
+                    <div class="profile-text">
+                        <div class="greeting">
+                            <span class="hi-text">Hi, I am </span>
+                            <span class="dynamic-title" id="dynamicTitle">Programmer</span>
+                        </div>
+                        <h1>Front-end Developer<br>& UI/UX Desainer</h1>
+                        <p class="subtitle">Creating a beutiful website with hardwork</p>
+                        <a href="#portfolio" class="cta-button">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nice to meet you my name is Mahansa. I'm 15 years old. Now I'm a student at Letris school and I have a passion on Programing, I have 3 Years experience of learning a Frontend using HTML,CSS,Javascript And also i can use framework such as React. Beside of that i also like learning C++ And PHP <p>
+                    <br>
+                    <p>I have a target to make a something that can help humanity</p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">Professional Portrait</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section class="skills" id="skills">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="Assets/HTML.png" alt="UI/UX Design">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/CSS.png" alt="Frontend Development">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/JS.png" alt="Brand Identity">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/React.png" alt="Mobile Design">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/SASS.png" alt="Mobile Design">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/Tailwind.png" alt="Mobile Design">
+      </div>
+      <div class="skill-card">
+        <img src="Assets/C++.png" alt="Mobile Design">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://mahansa.github.io/epatos-online-storel/">
+                    <div class="portfolio-image">E-commerce Platform</div>
+                    <div class="portfolio-overlay">
+                    <h3>EPATOS Online Store</h3>
+                    </div>
+                    </a>
+                </div>
+             
+              
+            </div>
+        </div>
+    </section>
+
+    <!--Certification section-->
+    <section class="certification">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            <div class="Images">
+                <img src="Assets/sertifikatF.jpg" alt="Certification 1" width="600" height="400">
+                <img src="Assets/Competition2.PNG" alt="Certification 2" width="600" height="400">
+            </div>
+              <a href="Sertifikat.html" class="text-blue-500 hover:underline">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Ready to make something big? Contact me so we can work togather!</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mahansa Putra Wibisono. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
